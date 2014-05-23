@@ -1,0 +1,592 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7263828E192D9A46002C39FC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7263828D192D9A46002C39FC /* Foundation.framework */; };
+		72638290192D9A46002C39FC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7263828F192D9A46002C39FC /* CoreGraphics.framework */; };
+		72638292192D9A46002C39FC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72638291192D9A46002C39FC /* UIKit.framework */; };
+		72638298192D9A46002C39FC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 72638296192D9A46002C39FC /* InfoPlist.strings */; };
+		7263829A192D9A46002C39FC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 72638299192D9A46002C39FC /* main.m */; };
+		7263829E192D9A46002C39FC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7263829D192D9A46002C39FC /* AppDelegate.m */; };
+		726382A0192D9A46002C39FC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7263829F192D9A46002C39FC /* Images.xcassets */; };
+		726382A7192D9A46002C39FC /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 726382A6192D9A46002C39FC /* XCTest.framework */; };
+		726382A8192D9A46002C39FC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7263828D192D9A46002C39FC /* Foundation.framework */; };
+		726382A9192D9A46002C39FC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72638291192D9A46002C39FC /* UIKit.framework */; };
+		726382B1192D9A46002C39FC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 726382AF192D9A46002C39FC /* InfoPlist.strings */; };
+		726382B3192D9A46002C39FC /* PegJumpTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 726382B2192D9A46002C39FC /* PegJumpTests.m */; };
+		726382BE192D9A6A002C39FC /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 726382BD192D9A6A002C39FC /* MainViewController.m */; };
+		726382C2192D9ABE002C39FC /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 726382C0192D9ABE002C39FC /* MenuViewController.m */; };
+		726382C3192D9ABE002C39FC /* MenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 726382C1192D9ABE002C39FC /* MenuViewController.xib */; };
+		726382CB192D9CCF002C39FC /* Black Dot.png in Resources */ = {isa = PBXBuildFile; fileRef = 726382C4192D9CCF002C39FC /* Black Dot.png */; };
+		726382CC192D9CCF002C39FC /* Blue Dot.png in Resources */ = {isa = PBXBuildFile; fileRef = 726382C5192D9CCF002C39FC /* Blue Dot.png */; };
+		726382CD192D9CCF002C39FC /* CarolusRex(Sv).m4a in Resources */ = {isa = PBXBuildFile; fileRef = 726382C6192D9CCF002C39FC /* CarolusRex(Sv).m4a */; };
+		726382CE192D9CCF002C39FC /* Light Blue Dot.png in Resources */ = {isa = PBXBuildFile; fileRef = 726382C7192D9CCF002C39FC /* Light Blue Dot.png */; };
+		726382CF192D9CCF002C39FC /* Purple Dot.png in Resources */ = {isa = PBXBuildFile; fileRef = 726382C8192D9CCF002C39FC /* Purple Dot.png */; };
+		726382D0192D9CCF002C39FC /* ThroughTheFireAndFlames.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 726382C9192D9CCF002C39FC /* ThroughTheFireAndFlames.m4a */; };
+		726382D1192D9CCF002C39FC /* UnforgivingBlade.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 726382CA192D9CCF002C39FC /* UnforgivingBlade.m4a */; };
+		726382E6192DA091002C39FC /* EndGameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 726382E4192DA091002C39FC /* EndGameViewController.m */; };
+		726382E7192DA091002C39FC /* EndGameViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 726382E5192DA091002C39FC /* EndGameViewController.xib */; };
+		72EC63E0192DAABB00A2B8C1 /* BoardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 72EC63DF192DAABB00A2B8C1 /* BoardView.m */; };
+		72EC63E5192DAAC700A2B8C1 /* GameRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 72EC63E2192DAAC700A2B8C1 /* GameRecord.m */; };
+		72EC63E6192DAAC700A2B8C1 /* GameView.m in Sources */ = {isa = PBXBuildFile; fileRef = 72EC63E4192DAAC700A2B8C1 /* GameView.m */; };
+		72EC63EB192DAAD200A2B8C1 /* PegButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 72EC63E8192DAAD200A2B8C1 /* PegButton.m */; };
+		72EC63EC192DAAD200A2B8C1 /* PegData.m in Sources */ = {isa = PBXBuildFile; fileRef = 72EC63EA192DAAD200A2B8C1 /* PegData.m */; };
+		72EC63F0192DB0AB00A2B8C1 /* PreferencesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72EC63EE192DB0AB00A2B8C1 /* PreferencesViewController.m */; };
+		72EC63F1192DB0AB00A2B8C1 /* PreferencesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 72EC63EF192DB0AB00A2B8C1 /* PreferencesViewController.xib */; };
+		72EC63F4192DB20D00A2B8C1 /* HellBunny.m in Sources */ = {isa = PBXBuildFile; fileRef = 72EC63F3192DB20D00A2B8C1 /* HellBunny.m */; };
+		72EC6414192DDFBC00A2B8C1 /* DropDownViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72EC6413192DDFBC00A2B8C1 /* DropDownViewController.m */; };
+		72EC6417192E874800A2B8C1 /* MusicDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 72EC6416192E874800A2B8C1 /* MusicDelegate.m */; };
+		72EC641B192F81B400A2B8C1 /* StatisticsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72EC6419192F81B400A2B8C1 /* StatisticsViewController.m */; };
+		72EC641C192F81B400A2B8C1 /* StatisticsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 72EC641A192F81B400A2B8C1 /* StatisticsViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		726382AA192D9A46002C39FC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 72638282192D9A46002C39FC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 72638289192D9A46002C39FC;
+			remoteInfo = PegJump;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7263828A192D9A46002C39FC /* PegJump.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PegJump.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7263828D192D9A46002C39FC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		7263828F192D9A46002C39FC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		72638291192D9A46002C39FC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		72638295192D9A46002C39FC /* PegJump-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PegJump-Info.plist"; sourceTree = "<group>"; };
+		72638297192D9A46002C39FC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		72638299192D9A46002C39FC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7263829B192D9A46002C39FC /* PegJump-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PegJump-Prefix.pch"; sourceTree = "<group>"; };
+		7263829C192D9A46002C39FC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		7263829D192D9A46002C39FC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		7263829F192D9A46002C39FC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		726382A5192D9A46002C39FC /* PegJumpTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PegJumpTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		726382A6192D9A46002C39FC /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		726382AE192D9A46002C39FC /* PegJumpTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PegJumpTests-Info.plist"; sourceTree = "<group>"; };
+		726382B0192D9A46002C39FC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		726382B2192D9A46002C39FC /* PegJumpTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PegJumpTests.m; sourceTree = "<group>"; };
+		726382BC192D9A6A002C39FC /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		726382BD192D9A6A002C39FC /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		726382BF192D9ABE002C39FC /* MenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuViewController.h; sourceTree = "<group>"; };
+		726382C0192D9ABE002C39FC /* MenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuViewController.m; sourceTree = "<group>"; };
+		726382C1192D9ABE002C39FC /* MenuViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MenuViewController.xib; sourceTree = "<group>"; };
+		726382C4192D9CCF002C39FC /* Black Dot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Black Dot.png"; path = "../Black Dot.png"; sourceTree = "<group>"; };
+		726382C5192D9CCF002C39FC /* Blue Dot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Blue Dot.png"; path = "../Blue Dot.png"; sourceTree = "<group>"; };
+		726382C6192D9CCF002C39FC /* CarolusRex(Sv).m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = "CarolusRex(Sv).m4a"; path = "../CarolusRex(Sv).m4a"; sourceTree = "<group>"; };
+		726382C7192D9CCF002C39FC /* Light Blue Dot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Light Blue Dot.png"; path = "../Light Blue Dot.png"; sourceTree = "<group>"; };
+		726382C8192D9CCF002C39FC /* Purple Dot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Purple Dot.png"; path = "../Purple Dot.png"; sourceTree = "<group>"; };
+		726382C9192D9CCF002C39FC /* ThroughTheFireAndFlames.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = ThroughTheFireAndFlames.m4a; path = ../ThroughTheFireAndFlames.m4a; sourceTree = "<group>"; };
+		726382CA192D9CCF002C39FC /* UnforgivingBlade.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = UnforgivingBlade.m4a; path = ../UnforgivingBlade.m4a; sourceTree = "<group>"; };
+		726382E3192DA091002C39FC /* EndGameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EndGameViewController.h; sourceTree = "<group>"; };
+		726382E4192DA091002C39FC /* EndGameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EndGameViewController.m; sourceTree = "<group>"; };
+		726382E5192DA091002C39FC /* EndGameViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EndGameViewController.xib; sourceTree = "<group>"; };
+		72EC63DE192DAABB00A2B8C1 /* BoardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BoardView.h; sourceTree = "<group>"; };
+		72EC63DF192DAABB00A2B8C1 /* BoardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BoardView.m; sourceTree = "<group>"; };
+		72EC63E1192DAAC700A2B8C1 /* GameRecord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameRecord.h; sourceTree = "<group>"; };
+		72EC63E2192DAAC700A2B8C1 /* GameRecord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameRecord.m; sourceTree = "<group>"; };
+		72EC63E3192DAAC700A2B8C1 /* GameView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameView.h; sourceTree = "<group>"; };
+		72EC63E4192DAAC700A2B8C1 /* GameView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameView.m; sourceTree = "<group>"; };
+		72EC63E7192DAAD200A2B8C1 /* PegButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PegButton.h; sourceTree = "<group>"; };
+		72EC63E8192DAAD200A2B8C1 /* PegButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PegButton.m; sourceTree = "<group>"; };
+		72EC63E9192DAAD200A2B8C1 /* PegData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PegData.h; sourceTree = "<group>"; };
+		72EC63EA192DAAD200A2B8C1 /* PegData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PegData.m; sourceTree = "<group>"; };
+		72EC63ED192DB0AB00A2B8C1 /* PreferencesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PreferencesViewController.h; sourceTree = "<group>"; };
+		72EC63EE192DB0AB00A2B8C1 /* PreferencesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PreferencesViewController.m; sourceTree = "<group>"; };
+		72EC63EF192DB0AB00A2B8C1 /* PreferencesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PreferencesViewController.xib; sourceTree = "<group>"; };
+		72EC63F2192DB20D00A2B8C1 /* HellBunny.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HellBunny.h; sourceTree = "<group>"; };
+		72EC63F3192DB20D00A2B8C1 /* HellBunny.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HellBunny.m; sourceTree = "<group>"; };
+		72EC6412192DDFBC00A2B8C1 /* DropDownViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DropDownViewController.h; sourceTree = "<group>"; };
+		72EC6413192DDFBC00A2B8C1 /* DropDownViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DropDownViewController.m; sourceTree = "<group>"; };
+		72EC6415192E874800A2B8C1 /* MusicDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MusicDelegate.h; sourceTree = "<group>"; };
+		72EC6416192E874800A2B8C1 /* MusicDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MusicDelegate.m; sourceTree = "<group>"; };
+		72EC6418192F81B400A2B8C1 /* StatisticsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StatisticsViewController.h; sourceTree = "<group>"; };
+		72EC6419192F81B400A2B8C1 /* StatisticsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StatisticsViewController.m; sourceTree = "<group>"; };
+		72EC641A192F81B400A2B8C1 /* StatisticsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StatisticsViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		72638287192D9A46002C39FC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				72638290192D9A46002C39FC /* CoreGraphics.framework in Frameworks */,
+				72638292192D9A46002C39FC /* UIKit.framework in Frameworks */,
+				7263828E192D9A46002C39FC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		726382A2192D9A46002C39FC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				726382A7192D9A46002C39FC /* XCTest.framework in Frameworks */,
+				726382A9192D9A46002C39FC /* UIKit.framework in Frameworks */,
+				726382A8192D9A46002C39FC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		72638281192D9A46002C39FC = {
+			isa = PBXGroup;
+			children = (
+				726382C4192D9CCF002C39FC /* Black Dot.png */,
+				726382C5192D9CCF002C39FC /* Blue Dot.png */,
+				726382C6192D9CCF002C39FC /* CarolusRex(Sv).m4a */,
+				726382C7192D9CCF002C39FC /* Light Blue Dot.png */,
+				726382C8192D9CCF002C39FC /* Purple Dot.png */,
+				726382C9192D9CCF002C39FC /* ThroughTheFireAndFlames.m4a */,
+				726382CA192D9CCF002C39FC /* UnforgivingBlade.m4a */,
+				72638293192D9A46002C39FC /* PegJump */,
+				726382AC192D9A46002C39FC /* PegJumpTests */,
+				7263828C192D9A46002C39FC /* Frameworks */,
+				7263828B192D9A46002C39FC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7263828B192D9A46002C39FC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7263828A192D9A46002C39FC /* PegJump.app */,
+				726382A5192D9A46002C39FC /* PegJumpTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7263828C192D9A46002C39FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7263828D192D9A46002C39FC /* Foundation.framework */,
+				7263828F192D9A46002C39FC /* CoreGraphics.framework */,
+				72638291192D9A46002C39FC /* UIKit.framework */,
+				726382A6192D9A46002C39FC /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		72638293192D9A46002C39FC /* PegJump */ = {
+			isa = PBXGroup;
+			children = (
+				7263829C192D9A46002C39FC /* AppDelegate.h */,
+				7263829D192D9A46002C39FC /* AppDelegate.m */,
+				726382BC192D9A6A002C39FC /* MainViewController.h */,
+				726382BD192D9A6A002C39FC /* MainViewController.m */,
+				726382D2192D9ED1002C39FC /* Game */,
+				726382E2192DA064002C39FC /* ViewControllers */,
+				72EC6415192E874800A2B8C1 /* MusicDelegate.h */,
+				72EC6416192E874800A2B8C1 /* MusicDelegate.m */,
+				72EC63F2192DB20D00A2B8C1 /* HellBunny.h */,
+				72EC63F3192DB20D00A2B8C1 /* HellBunny.m */,
+				7263829F192D9A46002C39FC /* Images.xcassets */,
+				72638294192D9A46002C39FC /* Supporting Files */,
+			);
+			path = PegJump;
+			sourceTree = "<group>";
+		};
+		72638294192D9A46002C39FC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				72638295192D9A46002C39FC /* PegJump-Info.plist */,
+				72638296192D9A46002C39FC /* InfoPlist.strings */,
+				72638299192D9A46002C39FC /* main.m */,
+				7263829B192D9A46002C39FC /* PegJump-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		726382AC192D9A46002C39FC /* PegJumpTests */ = {
+			isa = PBXGroup;
+			children = (
+				726382B2192D9A46002C39FC /* PegJumpTests.m */,
+				726382AD192D9A46002C39FC /* Supporting Files */,
+			);
+			path = PegJumpTests;
+			sourceTree = "<group>";
+		};
+		726382AD192D9A46002C39FC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				726382AE192D9A46002C39FC /* PegJumpTests-Info.plist */,
+				726382AF192D9A46002C39FC /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		726382D2192D9ED1002C39FC /* Game */ = {
+			isa = PBXGroup;
+			children = (
+				72EC63DE192DAABB00A2B8C1 /* BoardView.h */,
+				72EC63DF192DAABB00A2B8C1 /* BoardView.m */,
+				72EC63E1192DAAC700A2B8C1 /* GameRecord.h */,
+				72EC63E2192DAAC700A2B8C1 /* GameRecord.m */,
+				72EC63E3192DAAC700A2B8C1 /* GameView.h */,
+				72EC63E4192DAAC700A2B8C1 /* GameView.m */,
+				72EC63E7192DAAD200A2B8C1 /* PegButton.h */,
+				72EC63E8192DAAD200A2B8C1 /* PegButton.m */,
+				72EC63E9192DAAD200A2B8C1 /* PegData.h */,
+				72EC63EA192DAAD200A2B8C1 /* PegData.m */,
+			);
+			name = Game;
+			sourceTree = "<group>";
+		};
+		726382E2192DA064002C39FC /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				726382BF192D9ABE002C39FC /* MenuViewController.h */,
+				726382C0192D9ABE002C39FC /* MenuViewController.m */,
+				726382C1192D9ABE002C39FC /* MenuViewController.xib */,
+				726382E3192DA091002C39FC /* EndGameViewController.h */,
+				726382E4192DA091002C39FC /* EndGameViewController.m */,
+				726382E5192DA091002C39FC /* EndGameViewController.xib */,
+				72EC63ED192DB0AB00A2B8C1 /* PreferencesViewController.h */,
+				72EC63EE192DB0AB00A2B8C1 /* PreferencesViewController.m */,
+				72EC63EF192DB0AB00A2B8C1 /* PreferencesViewController.xib */,
+				72EC6412192DDFBC00A2B8C1 /* DropDownViewController.h */,
+				72EC6413192DDFBC00A2B8C1 /* DropDownViewController.m */,
+				72EC6418192F81B400A2B8C1 /* StatisticsViewController.h */,
+				72EC6419192F81B400A2B8C1 /* StatisticsViewController.m */,
+				72EC641A192F81B400A2B8C1 /* StatisticsViewController.xib */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		72638289192D9A46002C39FC /* PegJump */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 726382B6192D9A46002C39FC /* Build configuration list for PBXNativeTarget "PegJump" */;
+			buildPhases = (
+				72638286192D9A46002C39FC /* Sources */,
+				72638287192D9A46002C39FC /* Frameworks */,
+				72638288192D9A46002C39FC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PegJump;
+			productName = PegJump;
+			productReference = 7263828A192D9A46002C39FC /* PegJump.app */;
+			productType = "com.apple.product-type.application";
+		};
+		726382A4192D9A46002C39FC /* PegJumpTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 726382B9192D9A46002C39FC /* Build configuration list for PBXNativeTarget "PegJumpTests" */;
+			buildPhases = (
+				726382A1192D9A46002C39FC /* Sources */,
+				726382A2192D9A46002C39FC /* Frameworks */,
+				726382A3192D9A46002C39FC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				726382AB192D9A46002C39FC /* PBXTargetDependency */,
+			);
+			name = PegJumpTests;
+			productName = PegJumpTests;
+			productReference = 726382A5192D9A46002C39FC /* PegJumpTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		72638282192D9A46002C39FC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "___FULLUSERNAME___";
+				TargetAttributes = {
+					726382A4192D9A46002C39FC = {
+						TestTargetID = 72638289192D9A46002C39FC;
+					};
+				};
+			};
+			buildConfigurationList = 72638285192D9A46002C39FC /* Build configuration list for PBXProject "PegJump" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 72638281192D9A46002C39FC;
+			productRefGroup = 7263828B192D9A46002C39FC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				72638289192D9A46002C39FC /* PegJump */,
+				726382A4192D9A46002C39FC /* PegJumpTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		72638288192D9A46002C39FC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				726382CB192D9CCF002C39FC /* Black Dot.png in Resources */,
+				726382CC192D9CCF002C39FC /* Blue Dot.png in Resources */,
+				726382CD192D9CCF002C39FC /* CarolusRex(Sv).m4a in Resources */,
+				726382CE192D9CCF002C39FC /* Light Blue Dot.png in Resources */,
+				72EC641C192F81B400A2B8C1 /* StatisticsViewController.xib in Resources */,
+				726382CF192D9CCF002C39FC /* Purple Dot.png in Resources */,
+				726382D0192D9CCF002C39FC /* ThroughTheFireAndFlames.m4a in Resources */,
+				726382D1192D9CCF002C39FC /* UnforgivingBlade.m4a in Resources */,
+				726382E7192DA091002C39FC /* EndGameViewController.xib in Resources */,
+				72638298192D9A46002C39FC /* InfoPlist.strings in Resources */,
+				726382C3192D9ABE002C39FC /* MenuViewController.xib in Resources */,
+				726382A0192D9A46002C39FC /* Images.xcassets in Resources */,
+				72EC63F1192DB0AB00A2B8C1 /* PreferencesViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		726382A3192D9A46002C39FC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				726382B1192D9A46002C39FC /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		72638286192D9A46002C39FC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				72EC641B192F81B400A2B8C1 /* StatisticsViewController.m in Sources */,
+				72EC63F0192DB0AB00A2B8C1 /* PreferencesViewController.m in Sources */,
+				72EC63E0192DAABB00A2B8C1 /* BoardView.m in Sources */,
+				7263829E192D9A46002C39FC /* AppDelegate.m in Sources */,
+				72EC63E6192DAAC700A2B8C1 /* GameView.m in Sources */,
+				72EC6417192E874800A2B8C1 /* MusicDelegate.m in Sources */,
+				726382E6192DA091002C39FC /* EndGameViewController.m in Sources */,
+				72EC63E5192DAAC700A2B8C1 /* GameRecord.m in Sources */,
+				72EC6414192DDFBC00A2B8C1 /* DropDownViewController.m in Sources */,
+				726382BE192D9A6A002C39FC /* MainViewController.m in Sources */,
+				72EC63EC192DAAD200A2B8C1 /* PegData.m in Sources */,
+				7263829A192D9A46002C39FC /* main.m in Sources */,
+				726382C2192D9ABE002C39FC /* MenuViewController.m in Sources */,
+				72EC63EB192DAAD200A2B8C1 /* PegButton.m in Sources */,
+				72EC63F4192DB20D00A2B8C1 /* HellBunny.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		726382A1192D9A46002C39FC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				726382B3192D9A46002C39FC /* PegJumpTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		726382AB192D9A46002C39FC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 72638289192D9A46002C39FC /* PegJump */;
+			targetProxy = 726382AA192D9A46002C39FC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		72638296192D9A46002C39FC /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				72638297192D9A46002C39FC /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		726382AF192D9A46002C39FC /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				726382B0192D9A46002C39FC /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		726382B4192D9A46002C39FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		726382B5192D9A46002C39FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		726382B7192D9A46002C39FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PegJump/PegJump-Prefix.pch";
+				INFOPLIST_FILE = "PegJump/PegJump-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		726382B8192D9A46002C39FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PegJump/PegJump-Prefix.pch";
+				INFOPLIST_FILE = "PegJump/PegJump-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		726382BA192D9A46002C39FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/PegJump.app/PegJump";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PegJump/PegJump-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "PegJumpTests/PegJumpTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		726382BB192D9A46002C39FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/PegJump.app/PegJump";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PegJump/PegJump-Prefix.pch";
+				INFOPLIST_FILE = "PegJumpTests/PegJumpTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		72638285192D9A46002C39FC /* Build configuration list for PBXProject "PegJump" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				726382B4192D9A46002C39FC /* Debug */,
+				726382B5192D9A46002C39FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		726382B6192D9A46002C39FC /* Build configuration list for PBXNativeTarget "PegJump" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				726382B7192D9A46002C39FC /* Debug */,
+				726382B8192D9A46002C39FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		726382B9192D9A46002C39FC /* Build configuration list for PBXNativeTarget "PegJumpTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				726382BA192D9A46002C39FC /* Debug */,
+				726382BB192D9A46002C39FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 72638282192D9A46002C39FC /* Project object */;
+}
